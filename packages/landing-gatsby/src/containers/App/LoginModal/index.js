@@ -12,9 +12,10 @@ import Button from 'reusecore/src/elements/Button';
 import Image from 'reusecore/src/elements/Image';
 import LoginModalWrapper from './loginModal.style';
 import 'rc-tabs/assets/index.css';
-import LogoImage from 'common/src/assets/image/agency/logo.png';
-import LoginImage from 'common/src/assets/image/agency/login-bg.jpg';
-import GoogleLogo from 'common/src/assets/image/agency/google-icon.jpg';
+import LogoImage from 'common/src/assets/image/app/logo.png';
+import LoginImage from 'common/src/assets/image/app/login-bg.jpg';
+import GoogleLogo from 'common/src/assets/image/app/google-icon.jpg';
+import colors from 'common/src/theme/app/colors';
 
 const LoginModal = ({
   row,
@@ -174,12 +175,12 @@ LoginModal.defaultProps = {
     minWidth: '156px',
     fontSize: '14px',
     fontWeight: '500',
-    color: 'rgb(26, 115, 232)',
+    color: `${colors.primary}`,
   },
   // Google button style
   googleButtonStyle: {
-    bg: '#ffffff',
-    color: '#343D48',
+    bg: `${colors.white}`,
+    color: `${colors.quoteText}`,
   },
 };
 

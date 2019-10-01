@@ -11,6 +11,7 @@ import FeatureBlock from 'common/src/components/FeatureBlock';
 import Container from 'common/src/components/UI/Container';
 import ImageOne from 'common/src/assets/image/app/info1.png';
 import ImageTwo from 'common/src/assets/image/app/info2.png';
+import colors from 'common/src/theme/app/colors';
 
 const ControllSection = ({
   sectionWrapper,
@@ -126,7 +127,7 @@ ControllSection.defaultProps = {
     fontSize: '14px',
     letterSpacing: '0.11em',
     fontWeight: '700',
-    color: '#1a73e8',
+    color: `${colors.primary}`,
     textTransform: 'uppercase',
     mb: '10px',
     textAlign: ['center', 'left'],

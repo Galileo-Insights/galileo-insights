@@ -14,6 +14,7 @@ import AppleImg from 'common/src/assets/image/app/apple.svg';
 import DribbleImg from 'common/src/assets/image/app/dribbble.svg';
 import MailchimpImg from 'common/src/assets/image/app/mailchimp.svg';
 import BackgroundImg from 'common/src/assets/image/app/partner-bg.png';
+import colors from 'common/src/theme/app/colors';
 
 const PartnerHistory = ({
   row,
@@ -126,7 +127,7 @@ PartnerHistory.defaultProps = {
     fontSize: '14px',
     letterSpacing: '0.13em',
     fontWeight: '700',
-    color: '#1a73e8',
+    color: `${colors.primary}`,
     mb: '10px',
   },
   btnStyle: {

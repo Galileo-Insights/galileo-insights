@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Mockup from 'common/src/assets/image/app/iphone-mockup.png';
+import colors from 'common/src/theme/app/colors';
 
 const FeatureSliderWrapper = styled.div`
   position: relative;
@@ -240,7 +241,7 @@ const FeatureSliderWrapper = styled.div`
           margin-bottom: 10px;
           transition: all 0.3s ease;
           &.active {
-            background-color: rgb(26, 115, 232);
+            background-color: ${colors.primary};
             width: 32px;
             height: 4px;
           }

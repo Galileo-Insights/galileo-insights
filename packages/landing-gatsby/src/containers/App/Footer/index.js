@@ -7,7 +7,7 @@ import Heading from 'reusecore/src/elements/Heading';
 import Logo from 'reusecore/src/elements/UI/Logo';
 import Container from 'common/src/components/UI/Container';
 import FooterWrapper, { List, ListItem } from './footer.style';
-import LogoImage from 'common/src/assets/image/app/logo.png';
+import LogoImage from 'common/src/assets/image/app/logo-small.png';
 
 const Footer = ({
   row,
@@ -133,7 +133,7 @@ Footer.defaultProps = {
   },
   // Default logo size
   logoStyle: {
-    width: 'auto',
+    width: '100px',
     mb: ['15px', 0],
   },
   // widget text default style
