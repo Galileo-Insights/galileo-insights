@@ -12,7 +12,7 @@ import { openModal, closeModal } from '@redq/reuse-modal';
 import SearchPanel from '../SearchPanel';
 import LoginModal from '../LoginModal';
 
-import LogoImage from 'common/src/assets/image/app/logo-small.png';
+import LogoImage from 'common/src/assets/image/app/galileo-logo.svg';
 
 import { DrawerContext } from 'common/src/contexts/DrawerContext';
 
@@ -152,7 +152,7 @@ Navbar.defaultProps = {
     minHeight: '70px',
   },
   logoStyle: {
-    width: ['100px', '95px'],
+    width: ['200px'],
   },
   buttonStyle: {
     minHeight: '70px',

@@ -16,7 +16,8 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 900;
   }
 
   section{
@@ -408,7 +409,6 @@ const AppWrapper = styled.div`
                 font-size: 36px;
                 line-height: 50px;
                 color: #0f2137;
-                font-weight: 300;
                 -webkit-letter-spacing: -0.01em;
                 -moz-letter-spacing: -0.01em;
                 -ms-letter-spacing: -0.01em;
@@ -452,14 +452,14 @@ const AppWrapper = styled.div`
                 .testimonialName {
                   font-size: 18px;
                   line-height: 33px;
-                  color: #343d48;
+                  color: ${themeGet('colors.textColor')};
                   font-weight: 700;
                   margin-bottom: -3px;
                 }
                 .testimonialDesignation {
                   font-size: 16px;
                   line-height: 33px;
-                  color: #343d48;
+                  color: ${themeGet('colors.textColor')};
                   font-weight: 400;
                   opacity: 0.8;
                 }
@@ -496,7 +496,7 @@ const AppWrapper = styled.div`
             content: '';
             width: 10px;
             height: 2px;
-            background-color: #343d48;
+            background-color: ${themeGet('colors.textColor')};
             display: block;
             position: absolute;
             transform: rotate(-36deg);
@@ -507,7 +507,7 @@ const AppWrapper = styled.div`
             content: '';
             width: 10px;
             height: 2px;
-            background-color: #343d48;
+            background-color: ${themeGet('colors.textColor')};
             display: block;
             position: absolute;
             bottom: 11px;

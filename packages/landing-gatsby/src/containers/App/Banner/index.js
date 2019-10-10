@@ -146,16 +146,14 @@ DomainSection.defaultProps = {
   title: {
     content: 'Essential Mobile  App Landing for  Workspaces',
     fontSize: ['26px', '30px', '30px', '48px', '60px'],
-    fontWeight: '300',
-    color: '#0f2137',
-    letterSpacing: '-0.01px',
+    color: `${colors.textColor}`,
     mb: '20px',
   },
   description: {
     content:
       'A mobile app landing page is important and  essential for right amount of information about your product. Start increasing your user base upon the launch of your product.',
     fontSize: '16px',
-    color: '#343d48',
+    color: `${colors.textColor}`,
     lineHeight: '33px',
     mb: '10px',
   },

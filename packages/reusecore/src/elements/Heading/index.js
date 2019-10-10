@@ -1,12 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import colors from '../../../../common/src/theme/app/colors';
 import {
   fontFamily,
   fontWeight,
   textAlign,
   lineHeight,
-  letterSpacing
+  letterSpacing,
+  color
 } from 'styled-system';
 import { base, themed } from '../base';
 
@@ -17,6 +19,7 @@ const HeadingWrapper = styled('p')(
   textAlign,
   lineHeight,
   letterSpacing,
+  color,
   themed('Heading')
 );
 
@@ -64,6 +67,7 @@ Heading.propTypes = {
     PropTypes.number,
     PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string, PropTypes.number]))
   ]),
+  color,
   ...base.propTypes
 };
 
@@ -71,5 +75,6 @@ Heading.defaultProps = {
   as: 'h2',
   mt: 0,
   mb: '1rem',
-  fontWeight: 'bold'
+  fontWeight: '900',
+  color: colors.textColor
 };

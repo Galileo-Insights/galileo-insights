@@ -7,7 +7,8 @@ import Heading from 'reusecore/src/elements/Heading';
 import Logo from 'reusecore/src/elements/UI/Logo';
 import Container from 'common/src/components/UI/Container';
 import FooterWrapper, { List, ListItem } from './footer.style';
-import LogoImage from 'common/src/assets/image/app/logo-small.png';
+import LogoImage from 'common/src/assets/image/app/galileo-logo.svg';
+import colors from 'common/src/theme/app/colors';
 
 const Footer = ({
   row,
@@ -127,13 +128,13 @@ Footer.defaultProps = {
   },
   // widget title default style
   titleStyle: {
-    color: '#343d48',
+    color: `${colors.textColor}`,
     fontSize: '16px',
     fontWeight: '700',
   },
   // Default logo size
   logoStyle: {
-    width: '100px',
+    width: '200px',
     mb: ['15px', 0],
   },
   // widget text default style

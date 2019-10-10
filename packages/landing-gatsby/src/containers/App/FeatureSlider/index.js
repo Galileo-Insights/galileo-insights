@@ -121,9 +121,6 @@ FeatureSlider.defaultProps = {
     content: 'Key Features of Our App',
     textAlign: 'center',
     fontSize: ['20px', '24px', '24px', '24px', '30px'],
-    fontWeight: '400',
-    color: '#0f2137',
-    letterSpacing: '-0.025em',
     mb: '0',
   },
 };

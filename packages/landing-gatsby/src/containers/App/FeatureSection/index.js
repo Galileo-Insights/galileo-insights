@@ -95,9 +95,6 @@ FeatureSection.defaultProps = {
   sectionTitle: {
     content: 'Featured Service that We Provide',
     fontSize: ['20px', '24px', '24px', '24px', '30px'],
-    fontWeight: '400',
-    color: '#0f2137',
-    letterSpacing: '-0.025em',
     mb: '0',
     textAlign: ['center'],
   },
@@ -137,17 +134,14 @@ FeatureSection.defaultProps = {
   // feature title default style
   featureTitle: {
     fontSize: ['18px', '20px'],
-    fontWeight: '400',
-    color: '#0f2137',
     lineHeight: '1.5',
     mb: ['10px', '10px', '10px', '20px'],
-    letterSpacing: '-0.020em',
   },
   // feature description default style
   featureDescription: {
     fontSize: ['14px', '15px'],
     lineHeight: '1.75',
-    color: '#343d48',
+    color: `${colors.textColor}`,
   },
 };
 

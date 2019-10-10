@@ -180,7 +180,7 @@ LoginModal.defaultProps = {
   // Google button style
   googleButtonStyle: {
     bg: `${colors.white}`,
-    color: `${colors.quoteText}`,
+    color: `${colors.textColor}`,
   },
 };
 

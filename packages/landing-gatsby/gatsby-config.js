@@ -45,7 +45,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.ico`, // This path is relative to the root of the site.
+        icon: `src/images/galileo-favicon.png`, // This path is relative to the root of the site.
       },
     },
     {
@@ -55,6 +55,10 @@ module.exports = {
           {
             family: `Open Sans`,
             variants: [`300`, `400`, `600`, `700`, `800`],
+          },
+          {
+            family: `Playfair Display`,
+            variants: [`400`, `700`, `900`],
           },
         ],
       },

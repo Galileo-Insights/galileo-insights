@@ -144,16 +144,13 @@ PaymentSection.defaultProps = {
   },
   title: {
     fontSize: ['24px', '26px', '30px', '36px', '48px'],
-    fontWeight: '300',
-    color: '#0f2137',
-    letterSpacing: '-0.010em',
     mb: '20px',
     maxWidth: ['100%', '100%', '100%', '420px', '420px'],
     textAlign: ['center', 'left'],
   },
   description: {
     fontSize: '16px',
-    color: '#343d48cc',
+    color: `${colors.textColor}`,
     lineHeight: '2.1',
     mb: '33px',
     maxWidth: ['100%', '100%', '100%', '440px', '440px'],
