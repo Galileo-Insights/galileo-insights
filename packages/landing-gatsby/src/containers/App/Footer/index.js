@@ -1,80 +1,40 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
 import Box from 'reusecore/src/elements/Box';
 import Text from 'reusecore/src/elements/Text';
-import Heading from 'reusecore/src/elements/Heading';
 import Logo from 'reusecore/src/elements/UI/Logo';
 import Container from 'common/src/components/UI/Container';
-import FooterWrapper, { List, ListItem } from './footer.style';
+import FooterWrapper from './footer.style';
 import LogoImage from 'common/src/assets/image/app/galileo-logo.svg';
 import colors from 'common/src/theme/app/colors';
 
 const Footer = ({
-  row,
-  col,
-  colOne,
   colTwo,
-  titleStyle,
   logoStyle,
   textStyle,
   copyrightMenu,
   copyright,
 }) => {
-  const Data = useStaticQuery(graphql`
-    query {
-      appJson {
-        menuWidget {
-          id
-          title
-          menuItems {
-            id
-            text
-            url
-          }
-        }
-      }
-    }
-  `);
-
   return (
     <FooterWrapper>
       <Container>
-        <Box className="row" {...row}>
-          <Box {...colOne}>
-            {Data.appJson.menuWidget.map(widget => (
-              <Box className="col" {...col} key={widget.id}>
-                <Heading content={widget.title} {...titleStyle} />
-                <List>
-                  {widget.menuItems.map(item => (
-                    <ListItem key={`list__item-${item.id}`}>
-                      <a href={item.url} className="ListItem">
-                        {item.text}
-                      </a>
-                    </ListItem>
-                  ))}
-                </List>
-              </Box>
-            ))}
+        <Box {...colTwo} className="copyrightClass">
+          <Logo
+            href="/app"
+            logoSrc={LogoImage}
+            title="App"
+            logoStyle={logoStyle}
+          />
+          <Box {...copyrightMenu} className="copyrightMenu">
+            <Text content="Help" {...textStyle} />
+            <Text content="Privacy" {...textStyle} />
+            <Text content="Terms" {...textStyle} />
           </Box>
-          <Box {...colTwo} className="copyrightClass">
-            <Logo
-              href="/app"
-              logoSrc={LogoImage}
-              title="App"
-              logoStyle={logoStyle}
-            />
-            <Box {...copyrightMenu} className="copyrightMenu">
-              <Text content="Help" {...textStyle} />
-              <Text content="Privacy" {...textStyle} />
-              <Text content="Terms" {...textStyle} />
-            </Box>
-            <Box {...copyright} className="copyrightText">
-              <Text content="copyright 2019 RedQ, Inc." {...textStyle} />
-            </Box>
+          <Box {...copyright} className="copyrightText">
+            <Text content={`copyright ${(new Date()).getFullYear()} Galileo Insights`} {...textStyle} />
           </Box>
-          {/* End of footer List column */}
         </Box>
+        {/* End of footer List column */}
       </Container>
     </FooterWrapper>
   );
@@ -82,7 +42,6 @@ const Footer = ({
 
 // Footer style props
 Footer.propTypes = {
-  row: PropTypes.object,
   col: PropTypes.object,
   colOne: PropTypes.object,
   colTwo: PropTypes.object,
@@ -93,22 +52,10 @@ Footer.propTypes = {
 
 // Footer default style
 Footer.defaultProps = {
-  // Footer row default style
-  row: {
-    flexBox: true,
-    flexWrap: 'wrap',
-    ml: '-15px',
-    mr: '-15px',
-  },
   // Footer col one style
   colTwo: {
-    mt: [0, '13px'],
-    mb: ['0px', 0],
     pl: ['15px', 0],
-    pt: ['35px', '55px'],
     pr: ['15px', '15px', 0],
-    borderTop: '1px solid',
-    borderColor: 'rgba(0,0,0,0.102)',
     flexBox: true,
     flexWrap: 'wrap',
     width: ['100%'],

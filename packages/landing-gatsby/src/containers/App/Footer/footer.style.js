@@ -2,9 +2,10 @@ import styled from 'styled-components';
 import colors from 'common/src/theme/app/colors';
 
 const FooterWrapper = styled.section`
-  padding: 80px 0 55px;
+  padding: 20px 0 15px;
   margin-top: 40px;
-  background-color: rgb(246, 249, 252);
+  background-color: ${colors.white};
+  border-top: 2px solid ${colors.primary};
   @media (max-width: 480px) {
     padding: 60px 0 30px;
   }
