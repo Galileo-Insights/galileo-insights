@@ -16,7 +16,8 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 900;
   }
 
   section{
@@ -59,12 +60,12 @@ const GlobalStyle = createGlobalStyle`
                 font-size: 21px;
               }
               &:hover {
-                color: #1a73e8;
+                color: ${themeGet('colors.primary')};
               }
             }
             &.is-current {
               a {
-                color: #1a73e8;
+                color: ${themeGet('colors.primary')};
                 position: relative;
                 &:before {
                   content: '';
@@ -72,7 +73,7 @@ const GlobalStyle = createGlobalStyle`
                   width: 8px;
                   height: 8px;
                   border-radius: 50%;
-                  background-color: #1a73e8;
+                  background-color: ${themeGet('colors.primary')};
                   position: absolute;
                   top: calc(50% - 8px / 2);
                   left: -20px;
@@ -106,11 +107,11 @@ const GlobalStyle = createGlobalStyle`
       }
 
       &.alt {
-        background-color: ${themeGet('colors.primary', '#1a73e8')} !important;
+        background-color: ${themeGet('colors.primary')} !important;
         border-radius: 50% !important;
         z-index: 999999 !important;
         padding: 0 !important;
-        box-shadow: 0 8px 38px rgba(26, 115, 232, 0.5) !important;
+        box-shadow: 0 8px 38px ${themeGet('primaryShadow')} !important;
         transition: all 0.3s ease !important;
         top: 25px !important;
         right: 30px !important;
@@ -218,7 +219,7 @@ const AppWrapper = styled.div`
         color: ${themeGet('colors.white', '#ffffff')};
         font-size: 18px;
         @media only screen and (max-width: 1100px) {
-          color: ${themeGet('colors.primary', '#1a73e8')};
+          color: ${themeGet('colors.primary')};
         }
         @media only screen and (max-width: 420px) {
           font-size: 14px;
@@ -242,7 +243,7 @@ const AppWrapper = styled.div`
       > span {
         background-color: ${themeGet('colors.white', '#ffffff')};
         @media only screen and (max-width: 990px) {
-          background-color: ${themeGet('colors.primary', '#1a73e8')};
+          background-color: ${themeGet('colors.primary')};
         }
       }
     }
@@ -268,11 +269,11 @@ const AppWrapper = styled.div`
 
       .reusecore__button {
         .btn-icon {
-          color: ${themeGet('colors.primary', '#1a73e8')};
+          color: ${themeGet('colors.primary')};
         }
       }
       .hamburgMenu__bar > span {
-        background-color: ${themeGet('colors.primary', '#1a73e8')};
+        background-color: ${themeGet('colors.primary')};
       }
     }
   }
@@ -296,19 +297,21 @@ const AppWrapper = styled.div`
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      color: rgb(26, 115, 232);
+      color: ${themeGet('colors.primary')};
       width: 35px;
+      top: -2px;
+      position: relative;
     }
     &:hover {
-      box-shadow: 0px 9px 20px -5px rgba(26, 115, 232, 0.57);
-      background-color: rgb(26, 115, 232);
+      box-shadow: 0px 9px 20px -5px ${themeGet('colors.primaryShadow')};
+      background-color: ${themeGet('colors.primaryHover')};
       cursor: pointer;
     }
     &.withoutBg {
       @media (max-width: 460px) {
         margin-top: 20px;
         margin-left: 0;
-        border: 1px solid #1a73e8;
+        border: 1px solid ${themeGet('colors.primary')};
         min-width: auto;
       }
       &:hover {
@@ -406,7 +409,6 @@ const AppWrapper = styled.div`
                 font-size: 36px;
                 line-height: 50px;
                 color: #0f2137;
-                font-weight: 300;
                 -webkit-letter-spacing: -0.01em;
                 -moz-letter-spacing: -0.01em;
                 -ms-letter-spacing: -0.01em;
@@ -430,7 +432,7 @@ const AppWrapper = styled.div`
                   margin-bottom: 10px;
                   margin-top: 0px;
                   font-size: 14px;
-                  color: #1a73e8;
+                  color: ${themeGet('colors.primary')};
                   display: block;
                   font-weight: 700;
                   text-align: left;
@@ -450,14 +452,14 @@ const AppWrapper = styled.div`
                 .testimonialName {
                   font-size: 18px;
                   line-height: 33px;
-                  color: #343d48;
+                  color: ${themeGet('colors.textColor')};
                   font-weight: 700;
                   margin-bottom: -3px;
                 }
                 .testimonialDesignation {
                   font-size: 16px;
                   line-height: 33px;
-                  color: #343d48;
+                  color: ${themeGet('colors.textColor')};
                   font-weight: 400;
                   opacity: 0.8;
                 }
@@ -482,10 +484,10 @@ const AppWrapper = styled.div`
             width: 35px;
             background-image: url(${SubstractHover});
             &::before {
-              background-color: #1a73e8;
+              background-color: ${themeGet('colors.primary')};
             }
             &::after {
-              background-color: #1a73e8;
+              background-color: ${themeGet('colors.primary')};
             }
           }
 
@@ -494,7 +496,7 @@ const AppWrapper = styled.div`
             content: '';
             width: 10px;
             height: 2px;
-            background-color: #343d48;
+            background-color: ${themeGet('colors.textColor')};
             display: block;
             position: absolute;
             transform: rotate(-36deg);
@@ -505,7 +507,7 @@ const AppWrapper = styled.div`
             content: '';
             width: 10px;
             height: 2px;
-            background-color: #343d48;
+            background-color: ${themeGet('colors.textColor')};
             display: block;
             position: absolute;
             bottom: 11px;
@@ -529,10 +531,10 @@ const AppWrapper = styled.div`
           background-size: contain;
           &:hover {
             &::before {
-              background-color: #1a73e8;
+              background-color: ${themeGet('colors.primary')};
             }
             &::after {
-              background-color: #1a73e8;
+              background-color: ${themeGet('colors.primary')};
             }
           }
 
@@ -541,7 +543,7 @@ const AppWrapper = styled.div`
             content: '';
             width: 10px;
             height: 2px;
-            background-color: #1a73e8;
+            background-color: ${themeGet('colors.primary')};
             display: block;
             position: absolute;
             transform: rotate(36deg);
@@ -552,7 +554,7 @@ const AppWrapper = styled.div`
             content: '';
             width: 10px;
             height: 2px;
-            background-color: #1a73e8;
+            background-color: ${themeGet('colors.primary')};
             display: block;
             position: absolute;
             bottom: 11px;
@@ -860,7 +862,7 @@ const AppWrapper = styled.div`
 const BannerSquareShape = styled.div`
   width: 980px;
   height: 1110px;
-  background: #1a73e8;
+  background: ${themeGet('colors.primary')};
   border-radius: 50px;
   -webkit-transform: rotate(105deg);
   -ms-transform: rotate(105deg);

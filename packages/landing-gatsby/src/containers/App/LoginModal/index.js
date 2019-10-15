@@ -12,9 +12,9 @@ import Button from 'reusecore/src/elements/Button';
 import Image from 'reusecore/src/elements/Image';
 import LoginModalWrapper from './loginModal.style';
 import 'rc-tabs/assets/index.css';
-import LogoImage from 'common/src/assets/image/agency/logo.png';
-import LoginImage from 'common/src/assets/image/agency/login-bg.jpg';
-import GoogleLogo from 'common/src/assets/image/agency/google-icon.jpg';
+import LogoImage from 'common/src/assets/image/app/galileo-logo.svg';
+import LoginImage from 'common/src/assets/image/app/login-bg.jpg';
+import colors from 'common/src/theme/app/colors';
 
 const LoginModal = ({
   row,
@@ -23,23 +23,11 @@ const LoginModal = ({
   logoStyle,
   titleStyle,
   contentWrapper,
-  outlineBtnStyle,
   descriptionStyle,
-  googleButtonStyle,
 }) => {
   const LoginButtonGroup = () => (
     <Fragment>
       <Button className="default" title="LOGIN" {...btnStyle} />
-      <Button
-        title="Forget Password"
-        variant="textButton"
-        {...outlineBtnStyle}
-      />
-    </Fragment>
-  );
-  const SignupButtonGroup = () => (
-    <Fragment>
-      <Button className="default" title="REGISTER" {...btnStyle} />
     </Fragment>
   );
   return (
@@ -57,19 +45,11 @@ const LoginModal = ({
               renderTabContent={() => <TabContent />}
             >
               <TabPane tab="LOGIN" key="loginForm">
-                <Heading content="Welcome Folk" {...titleStyle} />
+                <Heading content="Galileo's Study" {...titleStyle} />
                 <Text
-                  content="Welcome to Mate Family. Please login with your personal account information letter."
+                  content="Enter your login information below to learn, discover, and gain insights."
                   {...descriptionStyle}
                 />
-                <Button
-                  icon={<Image src={GoogleLogo} alt="Google Icon" />}
-                  title="Sign in with Google"
-                  iconPosition="left"
-                  className="google-login__btn"
-                  {...googleButtonStyle}
-                />
-
                 <Input inputType="email" isMaterial label="Email Address" />
                 <Input inputType="password" isMaterial label="Password" />
                 <CheckBox
@@ -79,26 +59,6 @@ const LoginModal = ({
                 />
                 <div>
                   <LoginButtonGroup />
-                </div>
-              </TabPane>
-              <TabPane tab="REGISTER" key="registerForm">
-                <Heading content="Welcome Folk" {...titleStyle} />
-                <Text
-                  content="Welcome to Mate Family. Please login with your personal account information letter."
-                  {...descriptionStyle}
-                />
-                <Button
-                  icon={<Image src={GoogleLogo} alt="Google Icon" />}
-                  title="Sign up with Google"
-                  iconPosition="left"
-                  className="google-login__btn"
-                  {...googleButtonStyle}
-                />
-                <Input isMaterial label="Full Name" />
-                <Input inputType="email" isMaterial label="Email Address" />
-                <Input inputType="password" isMaterial label="Password" />
-                <div>
-                  <SignupButtonGroup />
                 </div>
               </TabPane>
             </Tabs>
@@ -174,12 +134,12 @@ LoginModal.defaultProps = {
     minWidth: '156px',
     fontSize: '14px',
     fontWeight: '500',
-    color: 'rgb(26, 115, 232)',
+    color: `${colors.primary}`,
   },
   // Google button style
   googleButtonStyle: {
-    bg: '#ffffff',
-    color: '#343D48',
+    bg: `${colors.white}`,
+    color: `${colors.textColor}`,
   },
 };
 

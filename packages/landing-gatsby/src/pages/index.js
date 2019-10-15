@@ -1,57 +1,36 @@
 import React, { Fragment } from 'react';
-import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
+import Sticky from 'react-stickynode';
 import { Modal } from '@redq/reuse-modal';
-import { agencyTheme } from 'common/src/theme/agency';
+import { appTheme } from 'common/src/theme/app';
+import {
+  GlobalStyle,
+  AppWrapper,
+} from '../containers/App/app.style';
 import { ResetCSS } from 'common/src/assets/css/style';
-import { GlobalStyle, AgencyWrapper } from '../containers/Agency/agency.style';
-import Navbar from '../containers/Agency/Navbar';
-import BannerSection from '../containers/Agency/BannerSection';
-import FeatureSection from '../containers/Agency/FeatureSection';
-import AboutUsSection from '../containers/Agency/AboutUsSection';
-import WorkHistory from '../containers/Agency/WorkHistory';
-import BlogSection from '../containers/Agency/BlogSection';
-import TestimonialSection from '../containers/Agency/TestimonialSection';
-import TeamSection from '../containers/Agency/TeamSection';
-import VideoSection from '../containers/Agency/VideoSection';
-import FaqSection from '../containers/Agency/FaqSection';
-import NewsletterSection from '../containers/Agency/NewsletterSection';
-import QualitySection from '../containers/Agency/QualitySection';
-import Footer from '../containers/Agency/Footer';
-import { DrawerProvider } from 'common/src/contexts/DrawerContext';
+import Navbar from '../containers/App/Navbar';
+import DomainSection from '../containers/App/Banner';
+import FeatureSection from '../containers/App/FeatureSection';
+import Footer from '../containers/App/Footer';
 import '@redq/reuse-modal/es/index.css';
 import SEO from '../components/seo';
 
 export default () => {
   return (
-    <ThemeProvider theme={agencyTheme}>
+    <ThemeProvider theme={appTheme}>
       <Fragment>
-        <SEO title="Agency" />
+        <SEO title="Galileo Insights" />
         <Modal />
         <ResetCSS />
         <GlobalStyle />
-        {/* End of agency head section */}
-        {/* Start agency wrapper section */}
-        <AgencyWrapper>
+        <AppWrapper>
           <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
-            <DrawerProvider>
-              <Navbar />
-            </DrawerProvider>
+            <Navbar />
           </Sticky>
-          <BannerSection />
+          <DomainSection />
           <FeatureSection />
-          <AboutUsSection />
-          <WorkHistory />
-          <BlogSection />
-          <QualitySection />
-          <VideoSection />
-          <TestimonialSection />
-          <TeamSection />
-          <FaqSection />
-          <NewsletterSection />
           <Footer />
-        </AgencyWrapper>
-        {/* End of agency wrapper section */}
+        </AppWrapper>
       </Fragment>
     </ThemeProvider>
   );

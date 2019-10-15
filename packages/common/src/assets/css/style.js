@@ -1,10 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
+import colors from '../../theme/app/colors';
+
 import './flaticon.css';
 
 export const ResetCSS = createGlobalStyle`
   ::selection {
-    background: #333333;
-    color: #ffffff;
+    background: ${colors.textColor};
+    color: ${colors.white};
   }
 
   html {

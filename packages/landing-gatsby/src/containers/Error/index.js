@@ -11,6 +11,7 @@ import ErrorImage from 'common/src/assets/image/404.svg';
 import { home } from 'react-icons-kit/entypo/home';
 import { ccw } from 'react-icons-kit/entypo/ccw';
 import { ErrorWrapper, ErrorConatent, ButtonWrapper } from './error.style';
+import colors from 'common/src/theme/app/colors';
 
 const ErrorSec = ({ imageWrapper, title, text, reloadButton, homeButton }) => {
   const pageReload = () => {
@@ -64,16 +65,16 @@ ErrorSec.defaultProps = {
     mb: ['20px', '25px', '25px', '25px', '35px'],
     lineHeight: '1.31',
     textAlign: 'center',
-    fontFamily: 'poppins',
+    fontFamily: 'Open Sans',
     fontWeight: '600',
   },
   text: {
     fontSize: ['15px', '16px', '16px', '16px', '16px'],
-    color: '#343d48',
+    color: `${colors.textColor}`,
     lineHeight: '2',
     mb: ['30px', '40px', '50px', '60px'],
     textAlign: 'center',
-    fontFamily: 'lato',
+    fontFamily: 'Open Sans',
   },
   reloadButton: {
     type: 'button',
@@ -84,7 +85,7 @@ ErrorSec.defaultProps = {
     pr: ['15px', '22px'],
     iconPosition: 'left',
     bg: '#eaa03b',
-    fontFamily: 'lato',
+    fontFamily: 'Open Sans',
   },
   homeButton: {
     type: 'button',
@@ -95,7 +96,7 @@ ErrorSec.defaultProps = {
     pr: ['15px', '22px'],
     iconPosition: 'left',
     bg: '#e2e7f0',
-    fontFamily: 'lato',
+    fontFamily: 'Open Sans',
   },
 };
 

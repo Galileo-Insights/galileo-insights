@@ -18,6 +18,7 @@ import Thumb3 from 'common/src/assets/image/app/2.svg';
 import Thumb4 from 'common/src/assets/image/app/3.svg';
 import Thumb5 from 'common/src/assets/image/app/4.svg';
 import Thumb6 from 'common/src/assets/image/app/5.svg';
+import colors from 'common/src/theme/app/colors';
 
 // import DomainSection from '../container/Hosting/Domain';
 const images = [
@@ -112,7 +113,7 @@ FeatureSlider.defaultProps = {
     fontSize: '14px',
     letterSpacing: '0.13em',
     fontWeight: '700',
-    color: '#1a73e8',
+    color: `${colors.primary}`,
     mb: '10px',
   },
   // section title default style
@@ -120,9 +121,6 @@ FeatureSlider.defaultProps = {
     content: 'Key Features of Our App',
     textAlign: 'center',
     fontSize: ['20px', '24px', '24px', '24px', '30px'],
-    fontWeight: '400',
-    color: '#0f2137',
-    letterSpacing: '-0.025em',
     mb: '0',
   },
 };

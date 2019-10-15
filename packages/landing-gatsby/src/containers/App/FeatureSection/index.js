@@ -1,6 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
+import colors from 'common/src/theme/app/colors';
 import Box from 'reusecore/src/elements/Box';
 import Text from 'reusecore/src/elements/Text';
 import Heading from 'reusecore/src/elements/Heading';
@@ -86,7 +87,7 @@ FeatureSection.defaultProps = {
     fontSize: '14px',
     letterSpacing: '0.13em',
     fontWeight: '700',
-    color: '#1a73e8',
+    color: `${colors.primary}`,
     mb: '10px',
     textAlign: ['center'],
   },
@@ -94,9 +95,6 @@ FeatureSection.defaultProps = {
   sectionTitle: {
     content: 'Featured Service that We Provide',
     fontSize: ['20px', '24px', '24px', '24px', '30px'],
-    fontWeight: '400',
-    color: '#0f2137',
-    letterSpacing: '-0.025em',
     mb: '0',
     textAlign: ['center'],
   },
@@ -136,17 +134,14 @@ FeatureSection.defaultProps = {
   // feature title default style
   featureTitle: {
     fontSize: ['18px', '20px'],
-    fontWeight: '400',
-    color: '#0f2137',
     lineHeight: '1.5',
     mb: ['10px', '10px', '10px', '20px'],
-    letterSpacing: '-0.020em',
   },
   // feature description default style
   featureDescription: {
     fontSize: ['14px', '15px'],
     lineHeight: '1.75',
-    color: '#343d48',
+    color: `${colors.textColor}`,
   },
 };
 

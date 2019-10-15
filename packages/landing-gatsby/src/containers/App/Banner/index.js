@@ -13,6 +13,7 @@ import Container from 'common/src/components/UI/Container';
 import { Icon } from 'react-icons-kit';
 import { ic_arrow_forward } from 'react-icons-kit/md/ic_arrow_forward';
 import { BannerSquareShape, BannerCircleShape } from '../app.style';
+import colors from 'common/src/theme/app/colors';
 import {
   DiscountWrapper,
   DiscountLabel,
@@ -145,16 +146,14 @@ DomainSection.defaultProps = {
   title: {
     content: 'Essential Mobile  App Landing for  Workspaces',
     fontSize: ['26px', '30px', '30px', '48px', '60px'],
-    fontWeight: '300',
-    color: '#0f2137',
-    letterSpacing: '-0.01px',
+    color: `${colors.textColor}`,
     mb: '20px',
   },
   description: {
     content:
       'A mobile app landing page is important and  essential for right amount of information about your product. Start increasing your user base upon the launch of your product.',
     fontSize: '16px',
-    color: '#343d48',
+    color: `${colors.textColor}`,
     lineHeight: '33px',
     mb: '10px',
   },
@@ -163,11 +162,10 @@ DomainSection.defaultProps = {
     minWidth: '156px',
     fontSize: '14px',
     fontWeight: '500',
-    color: '#fff',
+    color: `${colors.white}`,
     borderRadius: '4px',
     pl: '22px',
     pr: '22px',
-    colors: 'primaryWithBg',
   },
   image: {
     ml: 'auto',
@@ -176,8 +174,8 @@ DomainSection.defaultProps = {
   btnStyleTwo: {
     minWidth: '156px',
     ml: '15px',
-    bg: '#fff',
-    color: 'rgb(26, 115, 232)',
+    bg: `${colors.white}`,
+    color: `${colors.primary}`,
   },
   textArea: {
     width: ['100%', '100%', '50%', '55%', '55%'],
@@ -186,11 +184,11 @@ DomainSection.defaultProps = {
     content: 'update',
     fontSize: '14px',
     fontWeight: '600',
-    color: '#fff',
+    color: `${colors.white}`,
     mb: 0,
     as: 'span',
     mr: '0.4em',
-    bg: 'rgb(26, 115, 232)',
+    bg: `${colors.primary}`,
   },
   discountText: {
     content: 'Version 2.5.0 has just released .',

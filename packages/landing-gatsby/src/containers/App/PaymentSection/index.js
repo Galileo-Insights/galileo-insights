@@ -10,6 +10,7 @@ import Image from 'reusecore/src/elements/Image';
 import FeatureBlock from 'common/src/components/FeatureBlock';
 import Container from 'common/src/components/UI/Container';
 import { PaymentCircleShape } from '../app.style';
+import colors from 'common/src/theme/app/colors';
 
 import ImageOne from 'common/src/assets/image/app/mockup.png';
 import ImageTwo from 'common/src/assets/image/app/credit-card.png';
@@ -137,22 +138,19 @@ PaymentSection.defaultProps = {
     fontSize: '14px',
     letterSpacing: '0.11em',
     fontWeight: '700',
-    color: '#1a73e8',
+    color: `${colors.primary}`,
     textTransform: 'uppercase',
     mb: '10px',
   },
   title: {
     fontSize: ['24px', '26px', '30px', '36px', '48px'],
-    fontWeight: '300',
-    color: '#0f2137',
-    letterSpacing: '-0.010em',
     mb: '20px',
     maxWidth: ['100%', '100%', '100%', '420px', '420px'],
     textAlign: ['center', 'left'],
   },
   description: {
     fontSize: '16px',
-    color: '#343d48cc',
+    color: `${colors.textColor}`,
     lineHeight: '2.1',
     mb: '33px',
     maxWidth: ['100%', '100%', '100%', '440px', '440px'],

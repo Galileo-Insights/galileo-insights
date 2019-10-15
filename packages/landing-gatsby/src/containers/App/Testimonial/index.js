@@ -11,6 +11,7 @@ import Image2 from 'common/src/assets/image/app/2.jpg';
 import Image3 from 'common/src/assets/image/app/5.jpg';
 import Image4 from 'common/src/assets/image/app/testi.jpg';
 import Image5 from 'common/src/assets/image/app/1.jpeg';
+import colors from 'common/src/theme/app/colors';
 
 const TestimonialSection = ({ sectionWrapper }) => {
   const Data = useStaticQuery(graphql`
@@ -94,7 +95,7 @@ TestimonialSection.defaultProps = {
     fontSize: '14px',
     letterSpacing: '0.11em',
     fontWeight: '700',
-    color: '#1a73e8',
+    color: `${colors.primary}`,
     textTransform: 'uppercase',
     mb: '10px',
   },

@@ -14,6 +14,7 @@ import AppleImg from 'common/src/assets/image/app/apple.svg';
 import DribbleImg from 'common/src/assets/image/app/dribbble.svg';
 import MailchimpImg from 'common/src/assets/image/app/mailchimp.svg';
 import BackgroundImg from 'common/src/assets/image/app/partner-bg.png';
+import colors from 'common/src/theme/app/colors';
 
 const PartnerHistory = ({
   row,
@@ -108,15 +109,12 @@ PartnerHistory.defaultProps = {
   },
   title: {
     fontSize: ['24px', '26px', '30px', '36px', '48px'],
-    fontWeight: '300',
-    color: '#0f2137',
-    letterSpacing: '-0.010em',
     mb: '20px',
     maxWidth: ['100%', '100%', '100%', '490px', '490px'],
   },
   description: {
     fontSize: '16px',
-    color: '#343d48cc',
+    color: `${colors.textColor}`,
     lineHeight: '2.1',
     mb: '33px',
   },
@@ -126,7 +124,7 @@ PartnerHistory.defaultProps = {
     fontSize: '14px',
     letterSpacing: '0.13em',
     fontWeight: '700',
-    color: '#1a73e8',
+    color: `${colors.primary}`,
     mb: '10px',
   },
   btnStyle: {

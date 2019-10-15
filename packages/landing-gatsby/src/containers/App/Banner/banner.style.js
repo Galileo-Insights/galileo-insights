@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Mail from 'common/src/assets/image/app/mail.svg';
+import colors from 'common/src/theme/app/colors';
 
 export const DiscountWrapper = styled.div`
   text-align: left;
@@ -55,7 +56,7 @@ export const EmailInputWrapper = styled.div`
     margin-bottom: 30px;
     height: 60px;
     padding-left: 60px !important;
-    color: #343d48;
+    color: ${colors.textColor};
     opacity: 1;
     font-weight: 500;
     @media (max-width: 768px) {
@@ -67,7 +68,7 @@ export const EmailInputWrapper = styled.div`
 
     &:placeholder {
       font-size: 16px;
-      color: #343d48;
+      color: ${colors.textColor};
       opacity: 1;
     }
   }

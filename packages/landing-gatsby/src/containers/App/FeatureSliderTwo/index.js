@@ -9,6 +9,7 @@ import Image from 'reusecore/src/elements/Image';
 import FeatureBlock from 'common/src/components/FeatureBlock';
 import Container from 'common/src/components/UI/Container';
 import FeatureSectionTwoWrapper from './featureSliderTwo.style';
+import colors from 'common/src/theme/app/colors';
 
 const FeatureSection = ({
   row,
@@ -90,7 +91,7 @@ FeatureSection.defaultProps = {
     fontSize: '14px',
     letterSpacing: '0.13em',
     fontWeight: '700',
-    color: '#1a73e8',
+    color: `${colors.primary}`,
     mb: '10px',
   },
   // section title default style
@@ -148,7 +149,7 @@ FeatureSection.defaultProps = {
   featureDescription: {
     fontSize: ['14px', '15px'],
     lineHeight: '1.84',
-    color: '#343d48cc',
+    color: `${colors.textColor}`,
   },
 };
 

@@ -241,5 +241,115 @@
       "name": "Jon Doe",
       "designation": "Co-founder of Antinio"
     }
+  ],
+  "scalableFeature": [
+    {
+      "image": "../../assets/image/app/3.svg",
+      "title": "Daily Jackpot",
+      "des": "35000 CLV"
+    },
+    {
+      "image": "../../assets/image/app/2.svg",
+      "title": "Weekly Jackpot",
+      "des": "250000 CLV"
+    },
+    {
+      "image": "../../assets/image/app/3.svg",
+      "title": "Monthly Jackpot",
+      "des": "4999697 CLV"
+    },
+    {
+      "image": "../../assets/image/app/4.svg",
+      "title": "Yearly Jackpot",
+      "des": "300245785000 CLV"
+    }
+  ],
+  "processSteps": [
+    {
+      "image": "../../assets/image/app/step-1.png",
+      "title": "1. Research",
+      "description": "We work with you to understand user’s stories and validate your idea with real users using lean design sprints."
+    },
+    {
+      "image": "../../assets/image/app/step-2.png",
+      "title": "2. Design",
+      "description": "Expanding on the insights gained, you’ll work closely with our design team to create an elegant design"
+    },
+    {
+      "image": "../../assets/image/app/step-3.png",
+      "title": "3. Build",
+      "description": "With our scrum-based agile methodology, you’ll receive iterative builds every two weeks, which gives you "
+    }
+  ],
+  "serviceList": [
+    {
+      "title": "UI/UX Design",
+      "listItems": [
+        {
+          "content": "Design Sprints"
+        },
+        {
+          "content": "User Research"
+        },
+        {
+          "content": "Visual Design"
+        },
+        {
+          "content": "Mobile App Design"
+        },
+        {
+          "content": "Tracking & Learning"
+        },
+        {
+          "content": "Building Traction"
+        }
+      ]
+    },
+    {
+      "title": "Web Development",
+      "listItems": [
+        {
+          "content": "ReactJS"
+        },
+        {
+          "content": "AngularJS"
+        },
+        {
+          "content": "ASP.NET MVC"
+        },
+        {
+          "content": "WordPress"
+        },
+        {
+          "content": "NodeJS"
+        },
+        {
+          "content": "GO"
+        }
+      ]
+    },
+    {
+      "title": "Mobile App Development",
+      "listItems": [
+        {
+          "content": "iOS"
+        },
+        {
+          "content": "Android"
+        },
+        {
+          "content": "React Native"
+        },
+        {
+          "content": "Ionic & Apache Cordova"
+        },
+        {
+          "content": "NodeJS"
+        },
+        {
+          "content": "3D & VR"
+        }
+      ]
+    }
   ]
 }

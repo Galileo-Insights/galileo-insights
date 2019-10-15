@@ -28,10 +28,10 @@ const LoginModalWrapper = styled.div`
   .reusecore__button {
     background-color: transparent;
     &.default {
-      background-color: rgb(26, 115, 232);
+      background-color: ${themeGet('colors.primary')};
       transition: all 0.3s ease;
       &:hover {
-        box-shadow: 0px 9px 20px -5px rgba(26, 115, 232, 0.57);
+        box-shadow: 0px 9px 20px -5px ${themeGet('colors.primaryShadow')};
       }
     }
   }
@@ -91,11 +91,11 @@ const LoginModalWrapper = styled.div`
       &.is-material {
         &.is-focus {
           label {
-            color: rgb(26, 115, 232);
+            color: ${themeGet('colors.primary')};
             top: -12px;
           }
           .highlight {
-            background-color: rgb(26, 115, 232);
+            background-color: ${themeGet('colors.primary')};
           }
         }
       }
