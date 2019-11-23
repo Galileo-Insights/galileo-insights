@@ -210,6 +210,8 @@ const AppWrapper = styled.div`
 
   .reusecore__navbar {
     width: 100%;
+    background-color: ${themeGet('colors.white', '#ffffff')};
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     left: 0;
     top: 0;
     transition: all 0.3s ease;

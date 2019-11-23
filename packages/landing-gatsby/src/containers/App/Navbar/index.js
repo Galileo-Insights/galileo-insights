@@ -48,6 +48,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
       <Container>
         <Link to="/">
           <Logo
+            as="span"
             logoSrc={LogoImage}
             title="Galileo Insights"
             logoStyle={logoStyle}
@@ -56,19 +57,19 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <Link to="/truth">
             <Button
-              variant="fabExtended"
+              variant="textButton"
               title="Truth"
             />
           </Link>
           <Link to="/expertise">
             <Button
-              variant="fabExtended"
+              variant="textButton"
               title="Expertise"
             />
           </Link>
           <Button
             onClick={handleLoginModal}
-            variant="fabExtended"
+            variant="textButton"
             title="Study"
             aria-label="login"
           />

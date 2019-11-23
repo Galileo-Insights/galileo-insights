@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import { ThemeProvider } from 'styled-components';
-import Sticky from 'react-stickynode';
 import { Modal } from '@redq/reuse-modal';
 import { appTheme } from 'common/src/theme/app';
 import {
@@ -24,9 +23,7 @@ export default () => {
         <ResetCSS />
         <GlobalStyle />
         <AppWrapper>
-          <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
-            <Navbar />
-          </Sticky>
+          <Navbar />
           <Process />
           <ControllSection />
           <Footer />
