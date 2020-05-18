@@ -80,20 +80,10 @@ FeatureSection.defaultProps = {
     mb: ['30px', '30px', '30px', '56px'],
   },
   // sub section default style
-  sectionSubTitle: {
-    content: 'OUR SERVICES',
-    as: 'span',
-    display: 'block',
-    fontSize: '14px',
-    letterSpacing: '0.13em',
-    fontWeight: '700',
-    color: `${colors.primary}`,
-    mb: '10px',
-    textAlign: ['center'],
-  },
+
   // section title default style
   sectionTitle: {
-    content: 'Featured Service that We Provide',
+    content: 'What We Can Do',
     fontSize: ['20px', '24px', '24px', '24px', '30px'],
     mb: '0',
     textAlign: ['center'],
@@ -105,7 +95,7 @@ FeatureSection.defaultProps = {
   },
   // feature col default style
   col: {
-    width: [1, 1 / 2, 1 / 3, 1 / 3, 1 / 3],
+    width: [1, 1 / 1, 1 / 3, 1 / 3, 1 / 3],
   },
   // feature block wrapper default style
   blockWrapperStyle: {

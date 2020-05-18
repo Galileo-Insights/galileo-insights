@@ -53,7 +53,7 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Open Sans`,
+            family: `Work Sans`,
             variants: [`300`, `400`, `600`, `700`, `800`],
           },
           {

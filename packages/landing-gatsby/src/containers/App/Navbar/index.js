@@ -55,7 +55,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
           />
         </Link>
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <Link to="/truth">
+          {/* <Link to="/truth">
             <Button
               variant="textButton"
               title="Truth"
@@ -72,7 +72,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
             variant="textButton"
             title="Study"
             aria-label="login"
-          />
+          /> */}
         </div>
       </Container>
     </NavbarWrapper>

@@ -3,26 +3,26 @@
     {
       "id": 1,
       "icon": "flaticon-atom",
-      "title": "App Development",
-      "description": "If you have to develop a mobile app, this is the most appropriate time."
+      "title": "We run at your speed while increasing the pace of value delivery",
+      "description": "We are agile, collaborative teachers and do’ers.  We aren’t consultants.  We apply the right amount of structure to make you fast and predictable but never get bureaucratic."
     },
     {
       "id": 2,
-      "icon": "flaticon-trophy",
-      "title": "UI/UX Design",
-      "description": "We provide the best UI/UX Design by following the latest trends of the market."
+      "icon": "flaticon-conversation",
+      "title": "We speak business tongues",
+      "description": "we are business technologists with decades of experience across most major business verticals, healthcare, manufacturing, retail, and healthcare (yep, I said that twice).  We love cool cool tech but don’t hawk cool tech.   We promote business solutions."
     },
     {
       "id": 3,
-      "icon": "flaticon-conversation",
-      "title": "Wireframing Task",
-      "description": " We respect our customer opinions and deals with them. "
+      "icon": "flaticon-trophy",
+      "title": "We help you create real value",
+      "description": "if you measure value based purely on the number of lines of code you get per dollar, we won’t be partners.   But If you ‘get’ that lowest true TOTAL cost of ownership comes from high value products that connect with your consumers, are high quality, well-architected, robust, secure, compliant solutions – well then, let’s dance!"
     }
   ],
   "featuresSliderTwo": [
     {
       "id": 1,
-      "image": "../../assets/image/app/6.svg",
+      "image": "C:\\Users\\kylet\\Downloads\\iStock by Getty Images\\Astronaut-in-spacesuit-flies-standing-on-rocket-in-space-among-planets-and-stars-1133795506_4583x4583 [Converted].svg",
       "title": "Super Performance"
     },
     {

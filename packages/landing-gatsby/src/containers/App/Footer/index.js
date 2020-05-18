@@ -8,31 +8,12 @@ import FooterWrapper from './footer.style';
 import LogoImage from 'common/src/assets/image/app/galileo-logo.svg';
 import colors from 'common/src/theme/app/colors';
 
-const Footer = ({
-  colTwo,
-  logoStyle,
-  textStyle,
-  copyrightMenu,
-  copyright,
-}) => {
+const Footer = ({ colTwo, logoStyle, textStyle, copyrightMenu, copyright }) => {
   return (
     <FooterWrapper>
       <Container>
         <Box {...colTwo} className="copyrightClass">
-          <Logo
-            href="/app"
-            logoSrc={LogoImage}
-            title="App"
-            logoStyle={logoStyle}
-          />
-          <Box {...copyrightMenu} className="copyrightMenu">
-            <Text content="Help" {...textStyle} />
-            <Text content="Privacy" {...textStyle} />
-            <Text content="Terms" {...textStyle} />
-          </Box>
-          <Box {...copyright} className="copyrightText">
-            <Text content={`copyright ${(new Date()).getFullYear()} Galileo Insights`} {...textStyle} />
-          </Box>
+          <Logo logoSrc={LogoImage} title="App" logoStyle={logoStyle} />
         </Box>
         {/* End of footer List column */}
       </Container>

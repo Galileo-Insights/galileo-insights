@@ -14,12 +14,15 @@ import { Icon } from 'react-icons-kit';
 import { ic_arrow_forward } from 'react-icons-kit/md/ic_arrow_forward';
 import { BannerSquareShape, BannerCircleShape } from '../app.style';
 import colors from 'common/src/theme/app/colors';
+import Hero from 'common/src/assets/image/app/hero.jpg';
+
 import {
   DiscountWrapper,
   DiscountLabel,
   ButtonWrapper,
   EmailInputWrapper,
 } from './banner.style';
+import { flex } from 'styled-system';
 
 const DomainSection = ({
   SectionWrapper,
@@ -32,7 +35,15 @@ const DomainSection = ({
   imageArea,
   btnStyleTwo,
   discountAmount,
+  learningRow,
+  learningContentArea,
+  learningListArea,
+  learningTitle,
+  learningSubTitle,
+  learningDescription,
   discountText,
+  textArea,
+  textAreaRow,
 }) => {
   const Data = useStaticQuery(graphql`
     query {
@@ -48,57 +59,35 @@ const DomainSection = ({
 
   return (
     <Box {...SectionWrapper}>
-      <ParticlesComponent />
-      <BannerSquareShape />
-      <BannerCircleShape />
-      <Container>
-        <Box {...row}>
-          <Box {...col}>
-            <Box>
-              <DiscountWrapper>
-                <DiscountLabel>
-                  <Text {...discountAmount} className="discountAmount" />
-                  <Text {...discountText} />
-                </DiscountLabel>
-              </DiscountWrapper>
-            </Box>
-            <FeatureBlock
-              title={<Heading {...title} />}
-              description={<Text {...description} />}
-            />
-            <EmailInputWrapper>
-              <Input
-                inputType="email"
-                placeholder="Enter Email Address"
-                iconPosition="left"
-                aria-label="email"
-              />
-            </EmailInputWrapper>
-            <ButtonWrapper>
-              <Button title="EXPLORE MORE" {...button} />
-              <Button
-                {...button}
-                {...btnStyleTwo}
-                title="WATCH DEMOS"
-                icon={<Icon icon={ic_arrow_forward} />}
-                className="withoutBg"
-              />
-            </ButtonWrapper>
-          </Box>
-          <Box {...col} {...imageArea}>
-            <Box {...image}>
-              <Image
-                fluid={
-                  (Data.appScreenshot !== null) | undefined
-                    ? Data.appScreenshot.childImageSharp.fluid
-                    : {}
-                }
-                alt="Domain Image"
-              />
-            </Box>
-          </Box>
+      <div
+        style={{
+          textShadow: '2px 2px 2px black',
+          background: `url(${Hero}) fixed`,
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: 'calc(100vh - 25px)',
+        }}
+      >
+        <Box {...learningContentArea}>
+          <Heading
+            style={{ textShadow: '2px 2px 2px black' }}
+            content="Galileo Insights"
+            {...learningTitle}
+          />
+          <Text
+            style={{ textShadow: '2px 2px 2px black' }}
+            content="Our team grew up building bulletproof software to run Fortune 20 companies.   Then we got nimble and agile, and learned how to go fast, but without cutting technical corners (security, maintainability, reliability)."
+            {...learningSubTitle}
+          />
+          <Text
+            style={{ textShadow: '2px 2px 2px black' }}
+            {...learningDescription}
+            content="We don’t build much for big companies anymore.   Most are just too broken. We accelerate the evolution companies from two-guys-in-a-garage-cobblers-of-MVPs, to builders of robust and reliable products that big clients demand - and big investors love big clients."
+          />
         </Box>
-      </Container>
+      </div>
+      <ParticlesComponent />
     </Box>
   );
 };
@@ -112,14 +101,19 @@ DomainSection.propTypes = {
   button: PropTypes.object,
   btnStyleTwo: PropTypes.object,
   discountAmount: PropTypes.object,
-  discountText: PropTypes.object,
   textArea: PropTypes.object,
+  textAreaRow: PropTypes.object,
+  learningRow: PropTypes.object,
+  learningContentArea: PropTypes.object,
+  learningListArea: PropTypes.object,
+  learningTitle: PropTypes.object,
+  learningSubTitle: PropTypes.object,
+  learningDescription: PropTypes.object,
 };
 
 DomainSection.defaultProps = {
   SectionWrapper: {
     as: 'section',
-    pt: '80px',
     pb: '80px',
     overflow: 'hidden',
   },
@@ -138,6 +132,9 @@ DomainSection.defaultProps = {
     pl: '15px',
     width: ['100%', '100%', '50%', '44%', '44%'],
     mt: '-80px',
+  },
+  textAreaRow: {
+    flexDirection: 'row-reverse',
   },
   imageArea: {
     width: ['0%', '0%', '43%', '35%', '40%'],
@@ -190,14 +187,36 @@ DomainSection.defaultProps = {
     mr: '0.4em',
     bg: `${colors.primary}`,
   },
-  discountText: {
-    content: 'Version 2.5.0 has just released .',
-    fontSize: '13px',
+  learningRow: {
+    flexBox: true,
+    flexWrap: 'wrap',
+    mt: ['20px', '30px', '70px', '80px', '110px'],
+  },
+  learningContentArea: {
+    width: '50%',
+    mt: ['70px', '70px', '0', '0', '0'],
+  },
+  learningTitle: {
+    fontSize: ['20px', '40px', '50px', '60px', '70px'],
+    fontWeight: '700',
+    color: '#52bd95',
+    lineHeight: '1.34',
+    mb: ['20px', '20px', '15px', '20px', '20px'],
+    pr: ['0', '0', '0', '65px', '65px'],
+  },
+  learningSubTitle: {
+    fontSize: ['18px', '20px', '28px', '30px', '30px'],
     fontWeight: '400',
-    color: '#0f2137',
-    mb: 0,
-    as: 'span',
-    ml: '10px',
+    color: 'white',
+    lineHeight: '1.5',
+    mb: '20px',
+    pr: ['0', '0', '0', '65px', '65px'],
+  },
+  learningDescription: {
+    fontSize: ['16px', '18px', '22px'],
+    color: 'white',
+    lineHeight: '1.5',
+    mb: '25px',
   },
 };
 
