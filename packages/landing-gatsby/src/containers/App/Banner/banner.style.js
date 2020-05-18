@@ -86,7 +86,7 @@ export const EmailInputWrapper = styled.div`
 `;
 
 export const DiscountLabel = styled.div`
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   display: inline-block;
   border-radius: 4em;
   padding: 10px 24px 0 6px;

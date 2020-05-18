@@ -53,7 +53,7 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Work Sans`,
+            family: `Roboto`,
             variants: [`300`, `400`, `600`, `700`, `800`],
           },
           {

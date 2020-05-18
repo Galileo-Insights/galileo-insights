@@ -65,7 +65,7 @@ ErrorSec.defaultProps = {
     mb: ['20px', '25px', '25px', '25px', '35px'],
     lineHeight: '1.31',
     textAlign: 'center',
-    fontFamily: 'Work Sans',
+    fontFamily: 'Roboto',
     fontWeight: '600',
   },
   text: {
@@ -74,7 +74,7 @@ ErrorSec.defaultProps = {
     lineHeight: '2',
     mb: ['30px', '40px', '50px', '60px'],
     textAlign: 'center',
-    fontFamily: 'Work Sans',
+    fontFamily: 'Roboto',
   },
   reloadButton: {
     type: 'button',
@@ -85,7 +85,7 @@ ErrorSec.defaultProps = {
     pr: ['15px', '22px'],
     iconPosition: 'left',
     bg: '#eaa03b',
-    fontFamily: 'Work Sans',
+    fontFamily: 'Roboto',
   },
   homeButton: {
     type: 'button',
@@ -96,7 +96,7 @@ ErrorSec.defaultProps = {
     pr: ['15px', '22px'],
     iconPosition: 'left',
     bg: '#e2e7f0',
-    fontFamily: 'Work Sans',
+    fontFamily: 'Roboto',
   },
 };
 
