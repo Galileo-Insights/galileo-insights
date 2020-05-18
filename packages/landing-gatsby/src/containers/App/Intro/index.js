@@ -32,54 +32,44 @@ const IntroSection = ({
   btnStyle,
 }) => {
   return (
-    <Box {...sectionWrapper} id="control">
-      <Container fullWidth noGutter className="control-sec-container">
-        <Box {...row} {...imageAreaRow}>
-          <Box {...col} {...imageArea}>
-            <Card {...imageWrapper} {...imageWrapperOne}>
-              <Fade left>
-                <Image
-                  style={{ width: '620px' }}
-                  src={ImageOne}
-                  alt="Spaceman"
-                />
-              </Fade>
-            </Card>
-            <Card {...imageWrapper} {...imageWrapperTwo}>
-              <Fade bottom>
-                <Image
-                  style={{ width: '620px' }}
-                  src={ImageTwo}
-                  alt="Telescope"
-                />
-              </Fade>
-            </Card>
-          </Box>
-        </Box>
-      </Container>
-      <Container>
-        <Box {...row} {...textAreaRow}>
-          <Box {...col} {...textArea}>
-            <FeatureBlock
-              title={
-                <Heading content="What you'll get as a client" {...title} />
-              }
-              description={
-                <Text
-                  content="We worked FOR people all of our careers. With Galileo, we aspire to create amazing technology products by working WITH partners. If we are compatible as partners, we go ‘all in’. We invest in all of our partner’s successes if you let us. We will make it personal."
-                  {...description}
-                />
-              }
-              // button={
-              // 	<Link to="/truth">
-              // 		<Button title="Truth" {...button} onClick />
-              // 	</Link>
-              // }
-            />
-          </Box>
-        </Box>
-      </Container>
-    </Box>
+		<Box {...sectionWrapper} id="control">
+			<Container fullWidth noGutter className="control-sec-container">
+				<Box {...row} {...imageAreaRow}>
+					<Box {...col} {...imageArea}>
+						<Card {...imageWrapper} {...imageWrapperOne}>
+							<Fade left>
+								<Image style={{ width: '620px' }} src={ImageOne} alt="Spaceman" />
+							</Fade>
+						</Card>
+						<Card {...imageWrapper} {...imageWrapperTwo}>
+							<Fade bottom>
+								<Image style={{ width: '620px' }} src={ImageTwo} alt="Telescope" />
+							</Fade>
+						</Card>
+					</Box>
+				</Box>
+			</Container>
+			<Container>
+				<Box {...row} {...textAreaRow}>
+					<Box {...col} {...textArea}>
+						<FeatureBlock
+							title={<Heading content="Galileo as a partner" {...title} />}
+							description={
+								<Text
+									content="We’ve worked FOR people all of our careers. With Galileo, we choose to work WITH partners and cooperate to create amazing technology products and solutions. We look for people and companies that think like us and who are building things that we get excited about. When we find them, we go all in."
+									{...description}
+								/>
+							}
+							// button={
+							// 	<Link to="/truth">
+							// 		<Button title="Truth" {...button} onClick />
+							// 	</Link>
+							// }
+						/>
+					</Box>
+				</Box>
+			</Container>
+		</Box>
   );
 };
 

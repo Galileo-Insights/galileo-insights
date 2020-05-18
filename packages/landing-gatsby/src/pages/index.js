@@ -16,7 +16,7 @@ export default () => {
   return (
     <ThemeProvider theme={appTheme}>
       <Fragment>
-        <SEO title="Galileo Insights" />
+        <SEO title="Working WITH you" />
         <Modal />
         <ResetCSS />
         <GlobalStyle />

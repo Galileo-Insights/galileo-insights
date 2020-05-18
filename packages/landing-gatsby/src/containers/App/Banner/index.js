@@ -58,37 +58,37 @@ const DomainSection = ({
   `);
 
   return (
-    <Box {...SectionWrapper}>
-      <div
-        style={{
-          textShadow: '2px 2px 2px black',
-          background: `url(${Hero}) fixed`,
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          height: 'calc(100vh - 25px)',
-        }}
-      >
-        <Box {...learningContentArea}>
-          <Heading
-            style={{ textShadow: '2px 2px 2px black' }}
-            content="Galileo Insights"
-            {...learningTitle}
-          />
-          <Text
-            style={{ textShadow: '2px 2px 2px black' }}
-            content="Our team grew up building bulletproof software to run Fortune 20 companies.   Then we got nimble and agile, and learned how to go fast, but without cutting technical corners (security, maintainability, reliability)."
-            {...learningSubTitle}
-          />
-          <Text
-            style={{ textShadow: '2px 2px 2px black' }}
-            {...learningDescription}
-            content="We don’t build much for big companies anymore.   Most are just too broken. We accelerate the evolution companies from two-guys-in-a-garage-cobblers-of-MVPs, to builders of robust and reliable products that big clients demand - and big investors love big clients."
-          />
-        </Box>
-      </div>
-      <ParticlesComponent />
-    </Box>
+		<Box {...SectionWrapper}>
+			<div
+				style={{
+					textShadow: '2px 2px 2px black',
+					background: `url(${Hero}) fixed`,
+					display: 'flex',
+					justifyContent: 'center',
+					alignItems: 'center',
+					height: 'calc(100vh - 25px)',
+				}}
+			>
+				<Box {...learningContentArea}>
+					<Heading
+						style={{ textShadow: '2px 2px 2px black' }}
+						content="Galileo Insights"
+						{...learningTitle}
+					/>
+					<Text
+						style={{ textShadow: '2px 2px 2px black' }}
+						content="Our team grew up building bulletproof software that runs Fortune 20 companies. We left corporate America because we wanted to go faster, be nimble, and experiment. We like innovating on game-changing products with game-changing people."
+						{...learningSubTitle}
+					/>
+					<Text
+						style={{ textShadow: '2px 2px 2px black' }}
+						{...learningDescription}
+						content="Let us accelerate the evolution of your company and your technology products. We take you from two-guys-in-a-garage, cobbling together MVPs, to a reliable Product Team, building robust and exciting products that clients demand and that big investors love."
+					/>
+				</Box>
+			</div>
+			<ParticlesComponent />
+		</Box>
   );
 };
 

@@ -7,7 +7,7 @@ import BannerPattern from 'common/src/assets/image/app/pattern.png';
 
 const GlobalStyle = createGlobalStyle`
   body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
   }
 
   h1,
@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-weight: 900;
   }
 
