@@ -47,22 +47,7 @@ module.exports = {
 				display: `minimal-ui`,
 				icon: `src/images/galileo-favicon.png`, // This path is relative to the root of the site.
 			},
-		},
-		{
-			resolve: `gatsby-plugin-prefetch-google-fonts`,
-			options: {
-				fonts: [
-					{
-						family: `Work Sans`,
-						variants: [`300`, `400`, `600`, `700`, `800`],
-					},
-					{
-						family: `Playfair Display`,
-						variants: [`700`],
-					},
-				],
-			},
-		},
+		}
 		// this (optional) plugin enables Progressive Web App + Offline functionality
 		// To learn more, visit: https://gatsby.app/offline
 		// 'gatsby-plugin-offline',

@@ -1,11 +1,11 @@
 import React from 'react';
 import Particles from 'react-particles-js';
-import Img1 from 'common/src/assets/image/app/Asset 1.png';
-import Img2 from 'common/src/assets/image/app/Asset 3.png';
-import Img3 from 'common/src/assets/image/app/Asset 4.png';
-import Img4 from 'common/src/assets/image/app/Asset 5.png';
-import Img5 from 'common/src/assets/image/app/Asset 6.png';
-import Img6 from 'common/src/assets/image/app/Asset 8.png';
+import Img1 from 'common/src/assets/image/app/ball27x29.png';
+import Img2 from 'common/src/assets/image/app/ball39x35.png';
+import Img3 from 'common/src/assets/image/app/ball41x35.png';
+import Img4 from 'common/src/assets/image/app/ball69x64.png';
+import Img5 from 'common/src/assets/image/app/ball147x149.png';
+import Img6 from 'common/src/assets/image/app/ball121x113.png';
 
 const ParticlesComponent = () => {
   return (
@@ -15,7 +15,7 @@ const ParticlesComponent = () => {
         params={{
           particles: {
             number: {
-              value: 15,
+              value: 5,
               density: { enable: true, value_area: 800 },
             },
 
@@ -24,33 +24,33 @@ const ParticlesComponent = () => {
               images: [
                 {
                   src: `${Img1}`,
-                  width: 50,
-                  height: 53,
+                  width: 27,
+                  height: 29,
                 },
                 {
                   src: `${Img2}`,
-                  width: 50,
-                  height: 53,
+                  width: 39,
+                  height: 35,
                 },
                 {
                   src: `${Img3}`,
-                  width: 20,
-                  height: 23,
+                  width: 41,
+                  height: 35,
                 },
                 {
                   src: `${Img4}`,
-                  width: 20,
-                  height: 23,
+                  width: 69,
+                  height: 64,
                 },
                 {
                   src: `${Img5}`,
-                  width: 50,
-                  height: 53,
+                  width: 147,
+                  height: 149,
                 },
                 {
                   src: `${Img6}`,
-                  width: 50,
-                  height: 53,
+                  width: 121,
+                  height: 113,
                 },
               ],
             },
@@ -73,34 +73,13 @@ const ParticlesComponent = () => {
             },
             move: {
               enable: true,
-              speed: 3,
+              speed: 1,
               direction: 'none',
               random: false,
               straight: false,
               out_mode: 'out',
               bounce: false,
-              attract: { enable: false, rotateX: 600, rotateY: 1200 },
-            },
-          },
-          interactivity: {
-            detect_on: 'canvas',
-            events: {
-              onhover: { enable: true, mode: 'repulse' },
-              onclick: { enable: true, mode: 'push' },
-              resize: true,
-            },
-            modes: {
-              grab: { distance: 400, line_linked: { opacity: 1 } },
-              bubble: {
-                distance: 400,
-                size: 40,
-                duration: 2,
-                opacity: 8,
-                speed: 3,
-              },
-              repulse: { distance: 200, duration: 0.4 },
-              push: { particles_nb: 4 },
-              remove: { particles_nb: 2 },
+              attract: { enable: true, rotateX: 600, rotateY: 1200 },
             },
           },
           retina_detect: true,

@@ -114,7 +114,6 @@ DomainSection.propTypes = {
 DomainSection.defaultProps = {
   SectionWrapper: {
     as: 'section',
-    pb: '80px',
     overflow: 'hidden',
   },
   row: {
@@ -193,7 +192,7 @@ DomainSection.defaultProps = {
     mt: ['20px', '30px', '70px', '80px', '110px'],
   },
   learningContentArea: {
-    width: '50%',
+    width: ['80%', '75%', '60%', '50%'],
     mt: ['70px', '70px', '0', '0', '0'],
   },
   learningTitle: {
