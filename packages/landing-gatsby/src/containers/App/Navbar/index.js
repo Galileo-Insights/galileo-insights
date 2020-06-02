@@ -55,7 +55,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
           />
         </Link>
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          {/* <Link to="/truth">
+          <Link to="/truth">
             <Button
               variant="textButton"
               title="Truth"
@@ -67,7 +67,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
               title="Expertise"
             />
           </Link>
-          <Button
+          {/* <Button
             onClick={handleLoginModal}
             variant="textButton"
             title="Study"
@@ -92,6 +92,7 @@ Navbar.defaultProps = {
     minHeight: '70px',
   },
   logoStyle: {
+    maxWidth: '100%',
     width: ['200px'],
   },
   buttonStyle: {

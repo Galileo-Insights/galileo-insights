@@ -8,27 +8,27 @@ import {
 } from '../containers/App/app.style';
 import { ResetCSS } from 'common/src/assets/css/style';
 import Navbar from '../containers/App/Navbar';
-import ControllSection from '../containers/App/Control';
 import Footer from '../containers/App/Footer';
 import ScalableFeature from '../containers/App/Scalable';
+import Testimonial from '../containers/App/Testimonial';
 import '@redq/reuse-modal/es/index.css';
 import SEO from '../components/seo';
 
 export default () => {
   return (
-    <ThemeProvider theme={appTheme}>
-      <Fragment>
-        <SEO title="Expertise" />
-        <Modal />
-        <ResetCSS />
-        <GlobalStyle />
-        <AppWrapper>
-          <Navbar />
-          <ScalableFeature />
-          <ControllSection />
-          <Footer />
-        </AppWrapper>
-      </Fragment>
-    </ThemeProvider>
+		<ThemeProvider theme={appTheme}>
+			<Fragment>
+				<SEO title="Expertise" />
+				<Modal />
+				<ResetCSS />
+				<GlobalStyle />
+				<AppWrapper>
+					<Navbar />
+					<ScalableFeature />
+					<Testimonial />
+					<Footer />
+				</AppWrapper>
+			</Fragment>
+		</ThemeProvider>
   );
 };

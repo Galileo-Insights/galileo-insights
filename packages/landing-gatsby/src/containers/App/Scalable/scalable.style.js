@@ -1,41 +1,36 @@
 import styled from 'styled-components';
 
 const ScalableWrapper = styled.section`
-  padding: 50px 0 0px;
-  .colleft {
-    width: calc(50% - 70px);
-    margin-right: 70px;
-    @media (max-width: 1199px) {
-      width: 100%;
-    }
-    .TrustedImageBtn {
-      display: flex;
-      img {
-        width: 150px;
-        height: 47px;
-      }
-      .app_image_area {
-        margin-right: 20px;
-      }
-    }
-  }
-  .colright {
-    width: 50%;
-    @media (max-width: 1199px) {
-      width: 100%;
-      margin-left: 0;
-      margin-top: 100px;
-    }
-    @media (max-width: 480px) {
-      width: 100%;
-      margin-left: 0;
-      margin-top: 40px;
-    }
-    img {
-      height: 100%;
-      width: 100%;
-    }
-  }
+	padding: 50px 0 0px;
+	.colleft {
+		width: calc(50% - 70px);
+		@media (max-width: 1199px) {
+		}
+		.TrustedImageBtn {
+			display: flex;
+			img {
+				width: 150px;
+				height: 47px;
+			}
+			.app_image_area {
+				margin-right: 20px;
+			}
+		}
+	}
+	.colright {
+		@media (max-width: 1199px) {
+			margin-left: 0;
+			margin-top: 100px;
+		}
+		@media (max-width: 480px) {
+			margin-left: 0;
+			margin-top: 40px;
+		}
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
 `;
 
 const FeatureSection = styled.section`

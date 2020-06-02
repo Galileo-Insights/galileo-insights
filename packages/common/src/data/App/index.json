@@ -210,36 +210,41 @@
   "testimonials": [
     {
       "id": 1,
-      "description": "Best working experience  with this amazing team & in future, we want to work together",
-      "name": "Jon Doe",
-      "designation": "Founder of Dumpy"
+      "description": "Strategy Talker Astronaut",
+      "name": "Bringing teams and systems together into one cohesive element that shifts the organizational mindset from functional domains, and the fodder needed to support them, back to a singular focus onto business products, their market fit and the technology that enables them.",
+      "designation": ""
     },
     {
       "id": 2,
-      "description": "Impressed with master class support of the team and really look forward for the future.",
-      "name": "Roman Ul Oman",
-      "designation": "Co-founder of QatarDiaries"
+      "description": "Strategy Thinker Astronaut",
+      "name": "Agility, curiosity and the willingness to fly fearlessly into the sun as a progressive team builder and assembler of ‘start-up’ minded and spirited innovators.",
+      "designation": ""
     },
 
     {
       "id": 3,
-      "description": "I have bought more than 10 themes on ThemeForest, and this is the first one I review. Wow! Amazing React Theme",
-      "name": "Jeny Doe",
-      "designation": "Director of Beauty-queen"
+      "description": "People & Robots Astronaut",
+      "name": "Understanding that each client faces unique challenges, immersing into a project by interacting with current and potential users. This ethnographic research coupled with clinical UX methodologies provide the background and tools necessary to deliver usercentric products.",
+      "designation": ""
     },
 
     {
       "id": 4,
-      "description": "Really, really well made! Love that each component is handmade and customised. Great Work",
-      "name": "Jeny Doe",
-      "designation": "Co-founder of Softo"
+      "description": "Ones & Zeroes Stitcher Astronaut",
+      "name": "Most in his element while working in the disciplines of database and application design, full-stack software development, and software architecture.",
+      "designation": ""
     },
-
     {
       "id": 5,
-      "description": "It written well. The author has a firm understanding of React and other technologies. It been consistently updated. Great product. Thank you.",
-      "name": "Jon Doe",
-      "designation": "Co-founder of Antinio"
+      "description": "Technology & Software Astronaut",
+      "name": "Fashioning software alongside integrated teams creating kick-ass products that are highly secure, reliable and scalable.",
+      "designation": ""
+    },
+    {
+      "id": 6,
+      "description": "Multi-faceted Craftsman Astronaut",
+      "name": "Connecting complex technical architecture with an intuitive user experience, all while being able to communicate in a digestible way with clients.",
+      "designation": ""
     }
   ],
   "scalableFeature": [
@@ -266,88 +271,52 @@
   ],
   "processSteps": [
     {
-      "image": "../../assets/image/app/step-1.png",
-      "title": "1. Research",
-      "description": "We work with you to understand user’s stories and validate your idea with real users using lean design sprints."
+      "image": "../../assets/image/app/ai.png",
+      "title": "AI/ML software.",
+      "description": "We partnered to architect and build the front-end and integration services for early breast cancer detection app."
     },
     {
-      "image": "../../assets/image/app/step-2.png",
-      "title": "2. Design",
-      "description": "Expanding on the insights gained, you’ll work closely with our design team to create an elegant design"
+      "image": "../../assets/image/app/fhir.png",
+      "title": "FHIR-compliant flow",
+      "description": "We have streamlined, integrated and automated the FHIR-compliant flow of information between all elements of the healthcare supply chain – Payer to Delivery"
     },
     {
-      "image": "../../assets/image/app/step-3.png",
-      "title": "3. Build",
-      "description": "With our scrum-based agile methodology, you’ll receive iterative builds every two weeks, which gives you "
+      "image": "../../assets/image/app/interfaces.png",
+      "title": "Interfaces and Architectures",
+      "description": "We designed next-generation interfaces and architectures to facilitate government mandated Interoperability between Patients and Physicians"
+    },
+    {
+      "image": "../../assets/image/app/realestate.png",
+      "title": "Real Estate",
+      "description": "We are developing the technologies to redefine and improve the information and convenience of services between home buyers and sellers, brokers, real estate agents and mortgage companies"
+    },
+    {
+      "image": "../../assets/image/app/stategovernment.png",
+      "title": "State Government",
+      "description": "We conceptualized a differentiated consumer-centric solution for use by any and all branches of the state government"
     }
   ],
   "serviceList": [
     {
-      "title": "UI/UX Design",
+      "title": "We have built",
       "listItems": [
         {
-          "content": "Design Sprints"
+          "content": "Concepts"
         },
         {
-          "content": "User Research"
+          "content": "Business Plans"
         },
         {
-          "content": "Visual Design"
+          "content": "Product Roadmaps"
         },
         {
-          "content": "Mobile App Design"
+          "content": "Prototypes"
         },
         {
-          "content": "Tracking & Learning"
+          "content": "Amazing B2C Products"
         },
         {
-          "content": "Building Traction"
-        }
-      ]
-    },
-    {
-      "title": "Web Development",
-      "listItems": [
-        {
-          "content": "ReactJS"
-        },
-        {
-          "content": "AngularJS"
-        },
-        {
-          "content": "ASP.NET MVC"
-        },
-        {
-          "content": "WordPress"
-        },
-        {
-          "content": "NodeJS"
-        },
-        {
-          "content": "GO"
-        }
-      ]
-    },
-    {
-      "title": "Mobile App Development",
-      "listItems": [
-        {
-          "content": "iOS"
-        },
-        {
-          "content": "Android"
-        },
-        {
-          "content": "React Native"
-        },
-        {
-          "content": "Ionic & Apache Cordova"
-        },
-        {
-          "content": "NodeJS"
-        },
-        {
-          "content": "3D & VR"
+          "content": "Robust B2B Backbones"
         }
       ]
     }

@@ -60,11 +60,11 @@ const IntroSection = ({
 									{...description}
 								/>
 							}
-							// button={
-							// 	<Link to="/truth">
-							// 		<Button title="Truth" {...button} onClick />
-							// 	</Link>
-							// }
+							button={
+								<Link to="/truth">
+									<Button title="Truth" {...button} onClick />
+								</Link>
+							}
 						/>
 					</Box>
 				</Box>

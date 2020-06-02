@@ -12,6 +12,7 @@ function SEO({ description, lang, meta, keywords, title }) {
           description || data.site.siteMetadata.description;
         return (
           <Helmet
+            image_url
             htmlAttributes={{
               lang,
             }}

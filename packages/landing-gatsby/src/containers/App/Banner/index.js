@@ -66,7 +66,8 @@ const DomainSection = ({
 					display: 'flex',
 					justifyContent: 'center',
 					alignItems: 'center',
-					height: 'calc(100vh - 25px)',
+          height: 'calc(100vh - 25px)',
+          backgroundPosition: 'center'
 				}}
 			>
 				<Box {...learningContentArea}>
