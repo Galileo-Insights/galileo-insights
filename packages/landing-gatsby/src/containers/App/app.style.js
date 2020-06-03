@@ -7,7 +7,7 @@ import BannerPattern from 'common/src/assets/image/app/pattern.png';
 
 const GlobalStyle = createGlobalStyle`
   body {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
   }
 
   h1,
@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 900;
   }
 
@@ -826,7 +826,7 @@ const AppWrapper = styled.div`
 									display: block;
 									width: 100%;
 									height: 100%;
-									box-shadow: 0 0 0 0.8px rgba(0, 0, 0, 0.1);
+									box-shadow: 0 0 0 0.8px rgba(255, 255, 255, 0.75);
 									border-radius: 50%;
 									top: 50%;
 									left: 50%;
@@ -843,7 +843,7 @@ const AppWrapper = styled.div`
 									display: block;
 									width: 100%;
 									height: 100%;
-									box-shadow: 0 0 0 0.8px rgba(0, 0, 0, 0.1);
+									box-shadow: 0 0 0 0.8px rgba(255, 255, 255, 0.5);
 									border-radius: 50%;
 									top: 50%;
 									left: 50%;

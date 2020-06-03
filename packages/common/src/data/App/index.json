@@ -2,7 +2,7 @@
   "features": [
     {
       "id": 1,
-      "icon": "flaticon-atom",
+      "icon": "flaticon-startup",
       "title": "Go Faster. Deliver sooner.",
       "description": "We are agile, collaborative teachers who do. We aren’t consultants. We apply just the right amount of structure to remove chaos, and replace it with velocity. Organized but never bureaucratic."
     },
@@ -14,7 +14,7 @@
     },
     {
       "id": 3,
-      "icon": "flaticon-trophy",
+      "icon": "flaticon-creative",
       "title": "Create real value",
       "description": "“Value” isn’t measured by the number of lines of code you get per dollar. Value comes from delivering secure, compliant solutions that connect with your consumers. We have the skillset to help you ideate, define and build a superior solution. If you agree with our definition of “value”, let’s dance!"
     }
@@ -211,39 +211,39 @@
     {
       "id": 1,
       "description": "Strategy Talker Astronaut",
-      "name": "Bringing teams and systems together into one cohesive element that shifts the organizational mindset from functional domains, and the fodder needed to support them, back to a singular focus onto business products, their market fit and the technology that enables them.",
+      "name": "This astronaut brings teams and systems together into one cohesive element that shifts the organizational mindset from functional domains, and the fodder needed to support them, back to a singular focus onto business products, their market fit and the technology that enables them.",
       "designation": ""
     },
     {
       "id": 2,
       "description": "Strategy Thinker Astronaut",
-      "name": "Agility, curiosity and the willingness to fly fearlessly into the sun as a progressive team builder and assembler of ‘start-up’ minded and spirited innovators.",
+      "name": "Agility, curiosity, and willingness enable this astronaut to fly fearlessly into the sun as a progressive team builder and assembler of ‘start-up’ minded and spirited innovators.",
       "designation": ""
     },
 
     {
       "id": 3,
       "description": "People & Robots Astronaut",
-      "name": "Understanding that each client faces unique challenges, immersing into a project by interacting with current and potential users. This ethnographic research coupled with clinical UX methodologies provide the background and tools necessary to deliver usercentric products.",
+      "name": "Understanding that each client faces unique challenges, this astronaut immerses into a project by interacting with current and potential users. This ethnographic research coupled with clinical UX methodologies provide the background and tools necessary to deliver usercentric products.",
       "designation": ""
     },
 
     {
       "id": 4,
       "description": "Ones & Zeroes Stitcher Astronaut",
-      "name": "Most in his element while working in the disciplines of database and application design, full-stack software development, and software architecture.",
+      "name": "Most in this astronaut's element while working in the disciplines of database and application design, full-stack software development, and software architecture.",
       "designation": ""
     },
     {
       "id": 5,
       "description": "Technology & Software Astronaut",
-      "name": "Fashioning software alongside integrated teams creating kick-ass products that are highly secure, reliable and scalable.",
+      "name": "This astronaut fashions software alongside integrated teams creating kick-ass products that are highly secure, reliable and scalable.",
       "designation": ""
     },
     {
       "id": 6,
       "description": "Multi-faceted Craftsman Astronaut",
-      "name": "Connecting complex technical architecture with an intuitive user experience, all while being able to communicate in a digestible way with clients.",
+      "name": "This astronaut connects complex technical architecture with an intuitive user experience, all while being able to communicate in a digestible way with clients.",
       "designation": ""
     }
   ],

@@ -44,38 +44,27 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
   };
 
   return (
-    <NavbarWrapper {...navbarStyle}>
-      <Container>
-        <Link to="/">
-          <Logo
-            as="span"
-            logoSrc={LogoImage}
-            title="Galileo Insights"
-            logoStyle={logoStyle}
-          />
-        </Link>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <Link to="/truth">
-            <Button
-              variant="textButton"
-              title="Truth"
-            />
-          </Link>
-          <Link to="/expertise">
-            <Button
-              variant="textButton"
-              title="Expertise"
-            />
-          </Link>
-          {/* <Button
+		<NavbarWrapper {...navbarStyle}>
+			<Container>
+				<Link to="/">
+					<Logo as="span" logoSrc={LogoImage} title="Galileo Insights" logoStyle={logoStyle} />
+				</Link>
+				<div style={{ display: 'flex', alignItems: 'center' }}>
+					<Link to="/truth">
+						<Button style={{ marginRight: '16px' }} variant="textButton" title="Truth" />
+					</Link>
+					<Link to="/expertise">
+						<Button variant="textButton" title="Expertise" />
+					</Link>
+					{/* <Button
             onClick={handleLoginModal}
             variant="textButton"
             title="Study"
             aria-label="login"
           /> */}
-        </div>
-      </Container>
-    </NavbarWrapper>
+				</div>
+			</Container>
+		</NavbarWrapper>
   );
 };
 
@@ -92,8 +81,7 @@ Navbar.defaultProps = {
     minHeight: '70px',
   },
   logoStyle: {
-    maxWidth: '100%',
-    width: ['200px'],
+    width: ['250px'],
   },
   buttonStyle: {
     minHeight: '70px',

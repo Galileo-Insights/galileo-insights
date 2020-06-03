@@ -11,6 +11,7 @@ import Container from 'common/src/components/UI/Container';
 import { plus } from 'react-icons-kit/feather/plus';
 import { ButtonWrapper } from '../../../../../common/src/components/FeatureBlock/featureBlock.style';
 import ProcessItem from './process.style';
+import Space from 'common/src/assets/image/app/galaxy.jpg';
 
 const ProcessSection = ({
   sectionWrapper,
@@ -32,7 +33,8 @@ const ProcessSection = ({
   listItem,
   listText,
   button,
-  listTitle,
+	listTitle,
+	astronauts,
 }) => {
   const Data = useStaticQuery(graphql`
     query {
@@ -67,13 +69,19 @@ const ProcessSection = ({
 						content="We have opinions and advice that we want to share, but we are not consultants.  We hope that you listen to our advice, and we want to roll up our sleeves, get with you in the trench and deliver. A proper blend of our teams, working on the right work, can improve the value of your company to investors."
 					/>
 				</Box>
-
+				<div
+					style={{
+						background: `url(${Space})`,
+						height: '50px',
+						backgroundPosition: 'center -366px',
+						boxShadow: '4px 6px 5px',
+					}}
+				/>
 				<Heading
 					style={{ paddingRight: '0px', textAlign: 'center', marginTop: '60px', marginBottom: '60px' }}
 					content="Winning Products"
 					{...learningTitle}
 				/>
-
 				<Box {...processRow}>
 					{Data.appJson.processSteps.map((item, index) => (
 						<Box {...processCol} key={`process-item-${index}`} className="process_item_col">
@@ -89,6 +97,15 @@ const ProcessSection = ({
 						</Box>
 					))}
 				</Box>
+				<div
+					style={{
+						background: `url(${Space})`,
+						height: '50px',
+						backgroundPosition: 'center -740px',
+						boxShadow: '4px 6px 5px',
+					}}
+				/>
+
 				<Box {...learningRow}>
 					<Box {...learningContentArea}>
 						<Heading content="Winning Business Structure" {...learningTitle} />
@@ -147,15 +164,16 @@ ProcessSection.propTypes = {
 	listText: PropTypes.object,
 	listTitle: PropTypes.object,
 	button: PropTypes.object,
+	astronauts: PropTypes.object,
 };
 
 ProcessSection.defaultProps = {
 	sectionWrapper: {
-		pt: ['60px', '80px', '90px', '100px', '140px'],
+		pt: ['30px', '40px'],
 		pb: ['10px', '40px', '30px', '50px', '50px'],
 	},
 	secTitleWrapper: {
-		mb: ['60px', '105px'],
+		mb: ['60px', '70px'],
 	},
 	secTitle: {
 		fontSize: ['22px', '26px', '26px', '30px', '30px'],
@@ -299,6 +317,9 @@ ProcessSection.defaultProps = {
 		pl: '22px',
 		pr: '22px',
 		colors: 'primaryWithBg',
+	},
+	astronauts: {
+		height: '200',
 	},
 };
 

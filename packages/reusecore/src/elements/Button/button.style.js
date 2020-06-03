@@ -23,7 +23,7 @@ const ButtonStyle = styled.button`
   padding-bottom: ${themeGet('space.2', '8')}px;
   padding-left: ${themeGet('space.4', '15')}px;
   padding-right: ${themeGet('space.4', '15')}px;
-  border: 0;
+  border: 2px solid #52bd95 !important;
   transition: all 0.3s ease;
   span.btn-text {
     padding-left: ${themeGet('space.1', '4')}px;
@@ -53,6 +53,10 @@ const ButtonStyle = styled.button`
     }
   }
 
+  &:hover {
+    border-color: transparent!important;
+  }
+  
   /* Style system support */
   ${alignItems}
   ${boxShadow}
@@ -66,7 +70,7 @@ const ButtonStyle = styled.button`
 ButtonStyle.propTypes = {
   ...alignItems.propTypes,
   ...boxShadow.propTypes,
-  ...variant.propTypes
+  ...variant.propTypes,
 };
 
 ButtonStyle.displayName = 'ButtonStyle';

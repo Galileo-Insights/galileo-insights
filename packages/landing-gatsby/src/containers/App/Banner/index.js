@@ -66,16 +66,12 @@ const DomainSection = ({
 					display: 'flex',
 					justifyContent: 'center',
 					alignItems: 'center',
-          height: 'calc(100vh - 25px)',
-          backgroundPosition: 'center'
+					height: 'calc(100vh - 25px)',
+					backgroundPosition: 'center',
+					overflow: 'scroll',
 				}}
 			>
 				<Box {...learningContentArea}>
-					<Heading
-						style={{ textShadow: '2px 2px 2px black' }}
-						content="Galileo Insights"
-						{...learningTitle}
-					/>
 					<Text
 						style={{ textShadow: '2px 2px 2px black' }}
 						content="Our team grew up building bulletproof software that runs Fortune 20 companies. We left corporate America because we wanted to go faster, be nimble, and experiment. We like innovating on game-changing products with game-changing people."
@@ -194,7 +190,7 @@ DomainSection.defaultProps = {
   },
   learningContentArea: {
     width: ['80%', '75%', '60%', '50%'],
-    mt: ['70px', '70px', '0', '0', '0'],
+    mt: ['70px'],
   },
   learningTitle: {
     fontSize: ['20px', '40px', '50px', '60px', '70px'],
