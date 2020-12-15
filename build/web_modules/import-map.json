@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "svelte/internal": "./svelte/internal.js",
+    "tailwindcss/dist/tailwind.css": "./tailwindcss/dist/tailwind.css"
+  }
+}
